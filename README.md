@@ -31,8 +31,11 @@ The experiments are used to evaluate the finite-sample behavior of the estimator
 Performance is summarized using measures such as:
 
 **Bias**
+
 **Standard Error**
+
 **Mean Squared Error (MSE)**
+
 **Root Mean Squared Error (RMSE)**
 
 Additional graphical summaries are used to examine the simulated data distributions and estimator performance.
