@@ -14,11 +14,11 @@ The implementation also includes benchmark estimators to compare the performance
 
 The simulation study mainly considers the following estimation methods:
 
-**●ARLSA estimator**
+**● ARLSA estimator**
 
-**●Importance-weighted estimator**
+**● Importance-weighted estimator**
 
-**●Naive estimator**
+**● Naive estimator**
 
 These methods are compared to evaluate the effect of accounting for label shift in **target-population estimation**.
 
