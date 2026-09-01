@@ -6,7 +6,7 @@ This repository contains research code for a simulation study based on **Analyti
 
 The project considers a label-shift setting where labeled observations are available from a **source population**, while only unlabeled observations are available from a **target population** with a different label distribution.
 
-The main goal of this repository is to implement the **ARLSA** estimation procedure and investigate its finite-sample performance through simulation experiments.
+The main goal of this repository is to implement the **ARLSA estimation** procedure and investigate its finite-sample performance through simulation experiments.
 
 The implementation also includes benchmark estimators to compare the performance of **ARLSA** under different simulation settings.
 
