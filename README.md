@@ -14,11 +14,11 @@ The implementation also includes benchmark estimators to compare the performance
 
 The simulation study mainly considers the following estimation methods:
 
-**ARLSA estimator**
+·**ARLSA estimator**
 
-**Importance-weighted estimator**
+·**Importance-weighted estimator**
 
-**Naive estimator**
+·**Naive estimator**
 
 These methods are compared to evaluate the effect of accounting for label shift in **target-population estimation**.
 
@@ -30,13 +30,13 @@ The experiments are used to evaluate the finite-sample behavior of the estimator
 
 Performance is summarized using measures such as:
 
-**Bias**
+·**Bias**
 
-**Standard Error**
+·**Standard Error**
 
-**Mean Squared Error (MSE)**
+·**Mean Squared Error (MSE)**
 
-**Root Mean Squared Error (RMSE)**
+·**Root Mean Squared Error (RMSE)**
 
 Additional graphical summaries are used to examine the simulated data distributions and estimator performance.
 
