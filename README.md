@@ -1,8 +1,8 @@
-ARLSA: Analytic and Robust Semi-Supervised Adaptation under Label Shift
+##ARLSA: Analytic and Robust Semi-Supervised Adaptation under Label Shift
 
 This repository contains research code for a simulation study based on Analytic and Robust Semi-Supervised Adaptation under Label Shift (ARLSA).
 
-Overview
+#Overview
 
 The project considers a label-shift setting where labeled observations are available from a source population, while only unlabeled observations are available from a target population with a different label distribution.
 
@@ -10,7 +10,7 @@ The main goal of this repository is to implement the ARLSA estimation procedure 
 
 The implementation also includes benchmark estimators to compare the performance of ARLSA under different simulation settings.
 
-Methods
+#Methods
 
 The simulation study mainly considers the following estimation methods:
 
