@@ -26,7 +26,7 @@ These methods are compared to evaluate the effect of accounting for label shift 
 
 | Parameter | Value / Distribution | Description |
 |---|---|---|
-| **Monte Carlo Replications** | `300` | Number of independent simulation replications |
+| **Replications** | `300` | Number of independent simulation replications |
 | **Total Sample Size** | `1000` | Total number of source and target observations |
 | **Source Sample Size** | `500` | Number of labeled source observations |
 | **Target Sample Size** | `500` | Number of unlabeled target observations |
