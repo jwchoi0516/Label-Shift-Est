@@ -36,7 +36,7 @@ These methods are compared to evaluate the effect of accounting for label shift 
 | **X1** | `-0.5Y + ε` | First covariate, with ε ~ Normal(0, 1) |
 | **X2** | `0.5Y + ε` | Second covariate, with ε ~ Normal(0, 1) |
 | **X3** | `Y + ε` | Third covariate, with ε ~ Normal(0, 1) |
-| **Target Parameters** | `b0, b1, b2, b3` | Target linear regression coefficients |
+| **Target Parameter** | `θ = (b0, b1, b2, b3)ᵀ` | Target linear regression parameter |
 | **Compared Methods** | `Naive, IPW, ARLSA, Oracle` | Estimators compared in the simulation |
 
 ## Simulation Results
