@@ -1,21 +1,22 @@
 # ======================================================================
-# FILE 3 / 3: ARLSA results
-# - 01_ARLSA_setup.R 불러오기
-# - 02_ARLSA_simulation.R에서 저장한 raw 결과 읽기
+# FILE 3 / 3: results
+# - 01setup.R 불러오기
+# - 02_simulation.R에서 저장한 raw 결과 읽기
 # - Bias / SD / RMSE 계산
 # - boxplot 및 rho diagnostic plot
 # - summary 결과 저장
 # ======================================================================
 
-source("01_ARLSA_setup.R")
+source("01_setup.R")
 
-raw_result_file <- "ARLSA_EfficientRho_MC_raw.csv"
+raw_result_file <- "EfficientRho_MC_raw.csv"
 
 if (!file.exists(raw_result_file)) {
   stop(
     paste0(
       "'", raw_result_file, "' does not exist. ",
-      "Run 02_ARLSA_simulation.R first."
+      "Run 02_
+      simulation.R first."
     )
   )
 }
@@ -40,13 +41,13 @@ summarize_parameter <- function(param, truth_value) {
 
   cols <- paste0(
     param,
-    c("_Naive", "_IPW", "_ARLSA", "_Oracle")
+    c("_Naive", "_IPW", "_L-S", "_Oracle")
   )
 
   method_names <- c(
     "Naive",
     "IPW",
-    "ARLSA",
+    "L-S",
     "Oracle"
   )
 
@@ -114,7 +115,7 @@ cat(sprintf(
 
 
 # ----------------------------------------------------------------------
-# 9. Boxplots: Naive / IPW / ARLSA / Oracle
+# 9. Boxplots: Naive / IPW / L-S / Oracle
 # ----------------------------------------------------------------------
 
 cat("\nDrawing boxplots...\n")
@@ -135,18 +136,18 @@ for (param in c("b0", "b1", "b2", "b3")) {
 
   cols <- paste0(
     param,
-    c("_Naive", "_IPW", "_ARLSA", "_Oracle")
+    c("_Naive", "_IPW", "_L-S", "_Oracle")
   )
 
   data_subset <- results_combined[, cols, drop = FALSE]
 
   # horizontal boxplot에서는 첫 번째 항목이 아래에 위치하므로
-  # 위에서부터 Naive, IPW, ARLSA, Oracle이 되도록 역순으로 배치
+  # 위에서부터 Naive, IPW, L-S, Oracle이 되도록 역순으로 배치
   data_plot <- data_subset[, 4:1, drop = FALSE]
 
   boxplot(
     data_plot,
-    names = c("Oracle", "ARLSA", "IPW", "Naive"),
+    names = c("Oracle", "L-S", "IPW", "Naive"),
     col = c("lightblue", "lightgreen", "orange", "salmon"),
     main = param,
     xlab = "Estimated Value",
@@ -243,14 +244,14 @@ legend(
 
 write.csv(
   summary_table,
-  "ARLSA_EfficientRho_MC_summary.csv",
+  "EfficientRho_MC_summary.csv",
   row.names = FALSE
 )
 
 cat("\n=============================================================\n")
 cat("Result analysis complete.\n")
 cat("Saved file:\n")
-cat("  - ARLSA_EfficientRho_MC_summary.csv\n")
+cat("  - EfficientRho_MC_summary.csv\n")
 cat("=============================================================\n")
 
 
