@@ -1,4 +1,4 @@
-# ARLSA: Analytic and Robust Semi-Supervised Adaptation under Label Shift
+# ARLSA: **Analytic and Robust Semi-Supervised Adaptation under Label Shift**
 
 This repository contains research code for a simulation study based on **Analytic and Robust Semi-Supervised Adaptation under Label Shift (ARLSA)**.
 
