@@ -73,7 +73,8 @@ This repository is provided for research and educational purposes to document th
 The code represents an independent implementation based on the methodology described in the original **ARLSA** paper and is not an official implementation provided by the authors.
 
 ## Conclusion
-<img width="1165" height="783" alt="sim300_boxplot" src="https://github.com/user-attachments/assets/022824a3-92a3-4013-a906-9783e95b64ef" />
+
+<img width="991" height="783" alt="Rplot" src="https://github.com/user-attachments/assets/b62aa7be-5a7c-49ce-9305-1a028525d8ef" />
 <img width="1109" height="783" alt="sim300_rho" src="https://github.com/user-attachments/assets/410ded6a-eb04-4023-8953-dab50695f5a3" />
 <img width="1109" height="783" alt="sim300_xdist" src="https://github.com/user-attachments/assets/f5514f7b-285d-408b-8651-2ce3631f7cc3" />
 
