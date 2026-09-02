@@ -68,9 +68,9 @@ Required packages are specified in the source files.
 
 ## Research Status
 
-This repository is provided for research and educational purposes to document the implementation and simulation study of the **ARLSA** methodology.
+This repository is provided for research and educational purposes to document the implementation and simulation study of the **Estimation under Label Shift** methodology.
 
-The code represents an independent implementation based on the methodology described in the original **ARLSA** paper and is not an official implementation provided by the authors.
+The code represents an independent implementation based on the methodology described in the original **Estimation under Label Shift** paper and is not an official implementation provided by the authors.
 
 ## Conclusion
 
