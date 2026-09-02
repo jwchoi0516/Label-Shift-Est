@@ -22,6 +22,16 @@ The simulation study mainly considers the following estimation methods:
 
 These methods are compared to evaluate the effect of accounting for label shift in **target-population estimation**.
 
+## Simulation Results
+
+| Method | beta0 | beta1 | beta2 | beta3 | RMSE | MAE |
+|:------|------:|------:|------:|------:|------:|------:|
+| **Naive**  | 0.0015 | -0.2510 | 0.2492 | 0.5004 | 0.2105 | 0.1503 |
+| **IPW**    | 0.3473 | -0.2143 | 0.2173 | 0.4323 | 0.0528 | 0.0409 |
+| **ARLSA**  | 0.4183 | -0.2043 | 0.2063 | 0.4108 | 0.1763 | 0.0659 |
+| **Oracle** | 0.3971 | -0.2011 | 0.1985 | 0.4016 | 0.0290 | 0.0233 |
+
+
 ## Repository Structure
 01_setup.R
     Basic simulation settings, data-generating mechanisms,
