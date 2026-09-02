@@ -22,6 +22,23 @@ The simulation study mainly considers the following estimation methods:
 
 These methods are compared to evaluate the effect of accounting for label shift in **target-population estimation**.
 
+## Simulation Settings
+
+| Parameter | Value / Distribution | Description |
+|---|---|---|
+| **Monte Carlo Replications** | `300` | Number of independent simulation replications |
+| **Total Sample Size** | `1000` | Total number of source and target observations |
+| **Source Sample Size** | `500` | Number of labeled source observations |
+| **Target Sample Size** | `500` | Number of unlabeled target observations |
+| **Source Proportion** | `0.5` | Proportion of source observations in the combined sample |
+| **Source Y** | `Normal(0, 2)` | Source outcome distribution |
+| **Target Y** | `Normal(1, 1)` | Target outcome distribution |
+| **X1** | `-0.5Y + ε` | First covariate, with ε ~ Normal(0, 1) |
+| **X2** | `0.5Y + ε` | Second covariate, with ε ~ Normal(0, 1) |
+| **X3** | `Y + ε` | Third covariate, with ε ~ Normal(0, 1) |
+| **Target Parameters** | `b0, b1, b2, b3` | Target linear regression coefficients |
+| **Compared Methods** | `Naive, IPW, ARLSA, Oracle` | Estimators compared in the simulation |
+
 ## Simulation Results
 
 | Method | beta0 | beta1 | beta2 | beta3 | RMSE | MAE |
