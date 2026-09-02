@@ -1,18 +1,18 @@
 # ======================================================================
-# FILE 2 / 3: ARLSA simulation
-# - 01_ARLSA_setup.R 불러오기
+# FILE 2 / 3: simulation
+# - 01_setup.R 불러오기
 # - Monte Carlo 반복 실행
 # - replication-level raw 결과 저장
 # ======================================================================
 
-source("01_ARLSA_setup.R")
+source("01_setup.R")
 
 # ----------------------------------------------------------------------
 # 7. Monte Carlo
 # ----------------------------------------------------------------------
 
 cat("=============================================================\n")
-cat("ARLSA Algorithm 1 simulation starts\n")
+cat("Algorithm 1 simulation starts\n")
 cat(sprintf("Source n = %d, Target n = %d\n", n_source, n_target))
 cat(sprintf("Monte Carlo replications = %d\n", total_seeds))
 cat("rho: Efficient Inference progressive estimation\n")
@@ -78,9 +78,9 @@ cat(sprintf(
 
 write.csv(
   results_combined,
-  "ARLSA_EfficientRho_MC_raw.csv",
+  "EfficientRho_MC_raw.csv",
   row.names = FALSE
 )
 
 cat("\nSaved raw Monte Carlo results:\n")
-cat("  - ARLSA_EfficientRho_MC_raw.csv\n")
+cat("  -EfficientRho_MC_raw.csv\n")
