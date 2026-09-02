@@ -48,7 +48,6 @@ These methods are compared to evaluate the effect of accounting for label shift 
 | **ARLSA**  | 0.4183 | -0.2043 | 0.2063 | 0.4108 | 0.1763 | 0.0659 |
 | **Oracle** | 0.3971 | -0.2011 | 0.1985 | 0.4016 | 0.0290 | 0.0233 |
 
-
 ## Repository Structure
 01_setup.R
     Basic simulation settings, data-generating mechanisms,
