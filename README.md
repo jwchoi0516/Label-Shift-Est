@@ -22,24 +22,6 @@ The simulation study mainly considers the following estimation methods:
 
 These methods are compared to evaluate the effect of accounting for label shift in **target-population estimation**.
 
-## Simulation Study
-
-Simulation experiments are conducted by repeatedly generating labeled source data and unlabeled target data under controlled label-shift settings.
-
-The experiments are used to evaluate the finite-sample behavior of the estimators.
-
-Performance is summarized using measures such as:
-
-**● Bias**
-
-**● Standard Error**
-
-**● Mean Squared Error (MSE)**
-
-**● Root Mean Squared Error (RMSE)**
-
-Additional graphical summaries are used to examine the simulated data distributions and estimator performance.
-
 ## Repository Structure
 01_setup.R
     Basic simulation settings, data-generating mechanisms,
