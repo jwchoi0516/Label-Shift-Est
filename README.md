@@ -6,15 +6,15 @@ This repository contains research code for a simulation study based on **Simulat
 
 The project considers a **label-shift** setting where labeled observations are available from a **source population**, while only unlabeled observations are available from a **target population** with a different label distribution.
 
-The main goal of this repository is to implement the **ARLSA estimation** procedure and investigate its finite-sample performance through simulation experiments.
+The main goal of this repository is to implement the **Label Shift** procedure and investigate its finite-sample performance through simulation experiments.
 
-The implementation also includes benchmark estimators to compare the performance of **ARLSA** under different simulation settings.
+The implementation also includes benchmark estimators to compare the performance of **Label Shift** under different simulation settings.
 
 ## Methods
 
 The simulation study mainly considers the following estimation methods:
 
-**● ARLSA estimator**
+**● Label Shift estimator**
 
 **● Importance-weighted estimator**
 
@@ -45,7 +45,7 @@ These methods are compared to evaluate the effect of accounting for label shift 
 |:------|------:|------:|------:|------:|------:|------:|
 | **Naive**  | 0.0015 | -0.2510 | 0.2492 | 0.5004 | 0.2105 | 0.1503 |
 | **IPW**    | 0.3473 | -0.2143 | 0.2173 | 0.4323 | 0.0528 | 0.0409 |
-| **ARLSA**  | 0.4183 | -0.2043 | 0.2063 | 0.4108 | 0.1763 | 0.0659 |
+| **Label Shift**  | 0.4183 | -0.2043 | 0.2063 | 0.4108 | 0.1763 | 0.0659 |
 | **Oracle** | 0.3971 | -0.2011 | 0.1985 | 0.4016 | 0.0290 | 0.0233 |
 
 ## Repository Structure
