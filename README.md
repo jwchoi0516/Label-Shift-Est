@@ -1,6 +1,6 @@
-# Simulation Study for Estimation under Label Shift
+# Analytic and Robust Semi-supervised Adaptation under Label Shift
 
-This repository contains research code for a simulation study based on **Simulation Study for Estimation under Label Shift**.
+This repository contains research code for a simulation study based on **Analytic and Robust Semi-supervised Adaptation under Label Shift**.
 
 ## Overview
 
