@@ -63,7 +63,7 @@ These methods are compared to evaluate the effect of accounting for label shift 
     and producing tables and graphical outputs.
 ## Environment
 
-The project is implemented in R.
+The project is implemented in **R**.
 
 Required packages are specified in the source files.
 
